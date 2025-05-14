@@ -386,6 +386,7 @@ fn tokenize_test() {
 
         state Add<signal: char> { # signal is reserved!
             let sub = 8u64 + 1.f32;
+            let tup = (1, 2, 3, 4);
             if signal == '=' {
                 link self -> AddAssign;
             } else {
